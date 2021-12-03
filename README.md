@@ -27,8 +27,11 @@ Bundle your dependencies and run the installation generator:
 ```shell
 bundle
 bundle exec rails g spree_searchkick:install
-bundle exec rails searchkick:reindex:all
+bundle exec rails searchkick:reindex CLASS=Spree::Product
+bundle exec rails searchkick:reindex CLASS=Spree::Taxon
 ```
+
+### Important
 
 [Install elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 
